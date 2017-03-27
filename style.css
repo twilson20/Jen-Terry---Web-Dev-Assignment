@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+
+#header {
+  position: absolute;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Patrick Hand SC', cursive;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#nav {
+  position: absolute;
+  padding-left: 600px;
+  padding-top: 35px;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+#nav a {
+  font-size: 35px;
+  color: black;
+  margin: 40px;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: lightgrey;
+  font-size: 40px;
+}
+
+#a {
+  position: absolute;
+  width: 280px;
+  top: 120px;
+  left: 30px;
+}
+
+#b {
+  position: absolute;
+  width: 280px;
+  top: 280px;
+  left: 325px;
+}
+
+#c {
+  position: absolute;
+  width: 280px;
+  top: 120px;
+  right: 360px;
+}
+
+#d {
+  position: absolute;
+  width: 280px;
+  top: 280px;
+  right: 30px;
+}
+
+#flavors img:hover {
+  width: 300px;
+}
+
