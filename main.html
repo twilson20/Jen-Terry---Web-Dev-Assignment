@@ -14,47 +14,65 @@
 
 	<center>
 	<div id="flavors">
-		<img id="cake" src="bcake.png">
-		<img id="matcha" src="matcha.png">
-		<img id="cc" src="cc.png">
-		<img id="coffee" src="coffee.png">
+		<img id="cake" src="bcake.png" data-original="bcake.png" data-alt="bcake2.png">
+		<img id="matcha" src="matcha.png" data-original="matcha.png" data-alt="matcha2.png">
+		<img id="cc" src="cc.png" data-original="cc.png" data-alt="cc2.png">
+		<img id="coffee" src="coffee.png" data-original="coffee.png" data-alt="coffee2.png">
 	</div>
 	</center>
 
 <script src="jquery-3.1.1.min.js"></script>
 
 <script>
+	// function clickHandler(e) {
+	// 	var icecream = e.target;
+	// 	console.log(icecream)
+	// 	var currentSource = cake.getAttribute('src');
+	//     if (currentSource == "bcake.png") {
+	//         cake.setAttribute("src", "bcake2.png");
+	//     } else {
+	//         cake.setAttribute("src", "bcake.png");
+	//     }
 
-	function clickHandler() {
-		var currentSource = cake.getAttribute('src');
-	    if (currentSource == "bcake.png") {
-	        cake.setAttribute("src", "bcake2.png");
-	    } else {
-	        cake.setAttribute("src", "bcake.png");
-	    }
-
-	    var currentSource = matcha.getAttribute('src');
-	    if (currentSource == "matcha.png") {
-	        matcha.setAttribute("src", "matcha2.png");
-	    } else {
-	        matcha.setAttribute("src", "matcha.png");
-	    }
-
-	    var currentSource = cc.getAttribute('src');
-	    if (currentSource == "cc.png") {
-	        cc.setAttribute("src", "cc2.png");
-	    } else {
-	        cc.setAttribute("src", "cc.png");
-	    }
-
-	   	var currentSource = coffee.getAttribute('src');
-	    if (currentSource == "coffee.png") {
-	        coffee.setAttribute("src", "coffee2.png");
-	    } else {
-	        coffee.setAttribute("src", "coffee.png");
-	    }
-	} 
+	// 	var currentSource = matcha.getAttribute('src');
+	//     if (currentSource == "matcha.png") {
+	//         matcha.setAttribute("src", "matcha2.png");
+	//     } else {
+	//         matcha.setAttribute("src", "matcha.png");
+	//     }
 	
+	// 	var currentSource = cc.getAttribute('src');
+	//     if (currentSource == "cc.png") {
+	//         cc.setAttribute("src", "cc2.png");
+	//     } else {
+	//         cc.setAttribute("src", "cc.png");
+	//     }
+	
+	//    	var currentSource = coffee.getAttribute('src');
+	//     if (currentSource == "coffee.png") {
+	//         coffee.setAttribute("src", "coffee2.png");
+	//     } else {
+	//         coffee.setAttribute("src", "coffee.png");
+	//     }
+	// }
+
+	function clickHandler(e) {
+		var img = $(this);
+		//console.log(img);
+		var currentSource = img.attr('src');
+		var altSource = img.data('alt');
+		var originalSource = img.data('original');
+
+		//console.log(currentSource)
+		//console.log(originalSource)
+
+		if (currentSource == originalSource) {
+			img.attr('src', altSource);
+		} else if (currentSource == altSource) {
+			img.attr('src', originalSource);
+		}
+	}
+
 	$('img').on('click', clickHandler)
 </script>
 
