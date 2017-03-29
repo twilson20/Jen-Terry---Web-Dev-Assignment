@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+@import url('https://fonts.googleapis.com/css?family=Caveat');
 
 #header {
-  position: absolute;
+  position: fixed;
   text-align: left;
   font-size: 50px;
   font-family: 'Patrick Hand SC', cursive;
@@ -11,7 +12,7 @@
 }
 
 #nav {
-  position: absolute;
+  position: fixed;
   padding-left: 600px;
   padding-top: 35px;
   font-family: 'Reenie Beanie', cursive;
@@ -30,34 +31,37 @@
 }
 
 #cake {
-  position: absolute;
+  position: fixed;
   width: 280px;
   top: 120px;
   left: 30px;
+  cursor: pointer;
 }
 
 #matcha {
-  position: absolute;
+  position: fixed;
   width: 280px;
   top: 280px;
   left: 325px;
+  cursor: pointer;
 }
 
 #cc {
-  position: absolute;
+  position: fixed;
   width: 280px;
   top: 120px;
   right: 360px;
+  cursor: pointer;
 }
 
 #coffee {
-  position: absolute;
+  position: fixed;
   width: 280px;
   top: 280px;
   right: 30px;
+  cursor: pointer;
 }
 
 #flavors img:hover {
   width: 300px;
 }
-
