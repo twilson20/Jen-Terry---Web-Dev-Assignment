@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Jen & Terry's Ice Cream</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<h1 id="header">Jen & Terry's Ice Cream</h1>
 	<div id="nav">
 		<a href="main.html">Home</a>
-		<a href="about.html">About</a>
+		<a href="about.html">FAQ</a>
 		<a href="contact.html">Contact</a>
 	</div>
 
 	<center>
 	<div id="flavors">
-		<img id="a" src="bcake.png">
-		<img id="b" src="matcha.png">
-		<img id="c" src="cc.png">
-		<img id="d" src="coffee.png">
+		<img id="cake" src="bcake.png">
+		<img id="matcha" src="matcha.png">
+		<img id="cc" src="cc.png">
+		<img id="coffee" src="coffee.png">
 	</div>
 	</center>
 
 <script src="jquery-3.1.1.min.js"></script>
+
 <script>
+
+	function clickHandler() {
+		var currentSource = cake.getAttribute('src');
+	    if (currentSource == "bcake.png") {
+	        cake.setAttribute("src", "bcake2.png");
+	    } else {
+	        cake.setAttribute("src", "bcake.png");
+	    }
+
+	    var currentSource = matcha.getAttribute('src');
+	    if (currentSource == "matcha.png") {
+	        matcha.setAttribute("src", "matcha2.png");
+	    } else {
+	        matcha.setAttribute("src", "matcha.png");
+	    }
+
+	    var currentSource = cc.getAttribute('src');
+	    if (currentSource == "cc.png") {
+	        cc.setAttribute("src", "cc2.png");
+	    } else {
+	        cc.setAttribute("src", "cc.png");
+	    }
+
+	   	var currentSource = coffee.getAttribute('src');
+	    if (currentSource == "coffee.png") {
+	        coffee.setAttribute("src", "coffee2.png");
+	    } else {
+	        coffee.setAttribute("src", "coffee.png");
+	    }
+	} 
 	
+	$('img').on('click', clickHandler)
 </script>
 
 </body>
