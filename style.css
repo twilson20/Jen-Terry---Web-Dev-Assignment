@@ -39,33 +39,33 @@
 
 #cake {
   position: fixed;
-  width: 280px;
-  top: 120px;
-  left: 30px;
+  width: 320px;
+  top: 110px;
+  left: 15px;
   cursor: pointer;
 }
 
 #matcha {
   position: fixed;
-  width: 280px;
+  width: 320px;
   top: 280px;
-  left: 325px;
+  left: 335px;
   cursor: pointer;
 }
 
 #cc {
   position: fixed;
-  width: 280px;
-  top: 120px;
-  right: 360px;
+  width: 320px;
+  top: 110px;
+  right: 320px;
   cursor: pointer;
 }
 
 #coffee {
   position: fixed;
-  width: 280px;
+  width: 320px;
   top: 280px;
-  right: 30px;
+  right: 15px;
   cursor: pointer;
 }
 
@@ -78,5 +78,5 @@
   top: 150px;
   left: 50px;
   font-family: caveat;
-  font-size: 20px;
+  font-size: 25px;
 }
