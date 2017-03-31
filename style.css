@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 
 #logo {
-  position: fixed;
+  position: absolute;
   margin-top: 0px;
   top: 0px;
   float: left;
 }
 
 #header {
-  position: fixed;
+  position: absolute;
   text-align: left;
   font-size: 50px;
   font-family: 'Patrick Hand SC', cursive;
@@ -19,7 +19,7 @@
 }
 
 #nav {
-  position: fixed;
+  position: absolute;
   padding-left: 600px;
   padding-top: 35px;
   font-family: 'Reenie Beanie', cursive;
@@ -38,34 +38,62 @@
 }
 
 #cake {
+<<<<<<< HEAD
   position: fixed;
   width: 280px;
   top: 200px;
   left: 30px;
+=======
+  position: absolute;
+  width: 320px;
+  top: 110px;
+  left: 15px;
+>>>>>>> origin/master
   cursor: pointer;
 }
 
 #matcha {
+<<<<<<< HEAD
   position: fixed;
   width: 280px;
   top: 360px;
   left: 400px;
+=======
+  position: absolute;
+  width: 320px;
+  top: 280px;
+  left: 335px;
+>>>>>>> origin/master
   cursor: pointer;
 }
 
 #cc {
+<<<<<<< HEAD
   position: fixed;
   width: 280px;
   top: 200px;
   right: 420px;
+=======
+  position: absolute;
+  width: 320px;
+  top: 110px;
+  right: 320px;
+>>>>>>> origin/master
   cursor: pointer;
 }
 
 #coffee {
+<<<<<<< HEAD
   position: fixed;
   width: 280px;
   top: 360px;
   right: 30px;
+=======
+  position: absolute;
+  width: 320px;
+  top: 280px;
+  right: 15px;
+>>>>>>> origin/master
   cursor: pointer;
 }
 
@@ -75,9 +103,9 @@
 }
 
 #container {
-  position: fixed;
+  position: absolute;
   top: 150px;
   left: 50px;
   font-family: caveat;
-  font-size: 20px;
+  font-size: 25px;
 }
