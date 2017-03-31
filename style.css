@@ -40,7 +40,7 @@
 #cake {
   position: fixed;
   width: 280px;
-  top: 120px;
+  top: 200px;
   left: 30px;
   cursor: pointer;
 }
@@ -48,29 +48,30 @@
 #matcha {
   position: fixed;
   width: 280px;
-  top: 280px;
-  left: 325px;
+  top: 360px;
+  left: 400px;
   cursor: pointer;
 }
 
 #cc {
   position: fixed;
   width: 280px;
-  top: 120px;
-  right: 360px;
+  top: 200px;
+  right: 420px;
   cursor: pointer;
 }
 
 #coffee {
   position: fixed;
   width: 280px;
-  top: 280px;
+  top: 360px;
   right: 30px;
   cursor: pointer;
 }
 
 #flavors img:hover {
   width: 300px;
+  background-color: pink;
 }
 
 #container {
