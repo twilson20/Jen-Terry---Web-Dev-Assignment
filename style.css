@@ -80,3 +80,19 @@
   font-family: caveat;
   font-size: 25px;
 }
+
+form {
+  position: relative;
+  top: 150px;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+}
+
+input {
+  height: 50px;
+  width: 300px;
+  margin-bottom: 20px;
+}
